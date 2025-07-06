@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #659999;
+    background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-first{
+    box-shadow: 0px 11px 15px 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-first button{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    border: none;
+    background-color: transparent;
+    width: 5rem;
+}
+
+/* Layar 2 */
+
+.Login-Container{
+    display: flex;
+    width: clamp(50vw,20vw + max-content,10vw);
+    height: clamp(70vh,20vw,5vh);
+    background: linear-gradient(to bottom left,#283048 50%, #85939850 50%);
+    box-shadow: 0px 0px 5px;
+    border-radius: 10px;    
+    
+    align-items: center;
+}
+
+ img{
+    width: clamp(25vw,15vw,10vw);
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.form-2{
+    margin: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: clamp(45vh,30vh,20vh);
+    width: clamp(50vw,25vw,20vw);
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 20px 1px;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    /* margin: 1rem; */
+    padding: 0px;
+}
+
+.LogIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 10rem;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    height: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.teks{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    justify-content: end;
+}
+
+/* Layar 3 */
+
+.form-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(50vw,15vw,10vw);
+    height: clamp(60vh,30vh,100vh);
+    background: linear-gradient(to bottom left, #ff8008 50%, #ffc837 60%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 1px;
+}
+
+@media (min-width: 1024px) {
+    .form-3{
+        width: clamp(20vw,15vw,10vw);
+        height: clamp(40vh,30vh,100vh);
+    }
+}
+
+@media (min-width: 425px){
+    .form-3{
+    width: clamp(30vw + min-content,15vw,10vw);
+    height: max-content;
+    }
+    input {
+    border: none;
+    border-radius: 10px;
+    margin: 1rem;
+    width: min-content;
+    height: min-content;
+    padding: 8px;
+}
+}
+
+.title-R{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+    display: flex;
+    width: 10rem;
+}
+
+.btn-register{
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 3px 1px;
+    cursor: pointer;
+    background: linear-gradient(to bottom left, #ff8008 50%, #ffc837 60%);
+}
+
+.Success{
+    display: none;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    width: 70%;
+    height: 2em;
+    background-color: aliceblue;
+    color: #f4791f;
+    z-index: 1000;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.GetLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 2em;
+    z-index: 1000;
+    /* position: absolute; */
+}
